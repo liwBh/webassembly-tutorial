@@ -61,7 +61,7 @@ source ./emsdk_env.sh
 ```
 source ~/emsdk/emsdk_env.sh
 ```
-Esto se realiza en el directorio de nuestro proyecto para crear los achivos `wasm`
+Esto se realiza en el directorio de nuestro proyecto para crear los archivos `wasm`
 
 ### Crea el archivo `main.cpp` con el siguiente contenido:
 
@@ -139,6 +139,8 @@ Esto se realiza en el directorio de nuestro proyecto para crear los achivos `was
   emcc main.cpp -o main.js -s EXPORTED_FUNCTIONS='["_run_loop"]' -s EXTRA_EXPORTED_RUNTIME_METHODS='["cwrap"]'
 ```
 
+Luego de ejecutar el comando crea dos archivos: main.js y main.wasm
+
 ### Servir los archivos con un servidor HTTP
 ```
   python3 -m http.server
@@ -147,6 +149,7 @@ Esto se realiza en el directorio de nuestro proyecto para crear los achivos `was
 URL: http://0.0.0.0:8000/
 
 
+![alt text](image.png)
 
 
 
