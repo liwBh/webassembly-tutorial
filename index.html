@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <meta name="theme-color" content="#ffffff">
+    <title>WebAssembly</title>
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>WebAssembly</h1>
+    <form id="form">
+        <label for="iterations">Number of iterations:</label>
+        <input type="number" id="iterations" name="iterations" min="1" required>
+        <button type="submit">Run wasm</button>
+    </form>
+
+    <h3>Execution Time WebAssembly</h3>
+    <pre id="output-wasm">Execution time: 0 ms</pre>
+
+    <button type="button" id="js">Run JS</button>
+    <h3>Execution Time JavaScript</h3>
+    <pre id="output-js">Execution time: 0 ms</pre>
+
+    <h3>Execution Prime sum WebAssembly </h3>
+    <button type="button" id="wasm-sum">Run JS</button>
+    <pre id="output-wasm2">Execution time: 0 ms</pre>
+
+    <h3>Execution Prime sum JavaScript </h3>
+    <button type="button" id="js-sum">Run JS</button>
+    <pre id="output-js2">Execution time: 0 ms</pre>
+
+    <script src="./scripts.js"></script>
+</body>
+</html>
